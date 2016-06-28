@@ -1,13 +1,29 @@
 {
-    "name"         : "node-red-contrib-meazon",
-    "version"      : "0.0.1",
-    "description"  : "A meazon node for node-red",
-    "dependencies": {
-    },
-    "keywords": [ "node-red","meazon" ],
-    "node-red"     : {
-        "nodes": {
-            "meazon": "meazon/meazon.js"
-        }
+  "name": "node-red-contrib-meazon",
+  "version": "0.0.1",
+  "description": "A meazon node for node-red",
+  "dependencies": {},
+  "keywords": [
+    "node-red",
+    "meazon"
+  ],
+  "node-red": {
+    "nodes": {
+      "meazon": "meazon/meazon.js"
     }
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gialouri/node-red-contrib-meazon.git"
+  },
+  "author": "Meazon <e.gialouri@meazon.com> (http://meazon.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gialouri/node-red-contrib-meazon/issues"
+  },
+  "homepage": "https://github.com/gialouri/node-red-contrib-meazon#readme"
 }
