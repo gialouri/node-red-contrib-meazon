@@ -17,7 +17,7 @@
 module.exports = function(RED) {
     "use strict";
     var ws = require("ws");
-    var inspect = require("util").inspect;
+  //  var inspect = require("util").inspect;
 
     // A node red node that sets up a local websocket server
     function WebSocketListenerNode(n) {
@@ -322,7 +322,7 @@ module.exports = function(RED) {
 					console.log(" else type websocket")
                     node.serverConfig.broadcast(payload,function(error){
                         if (!!error) {
-                            node.warn(RED._("websocket.errors.send-error")+inspect(error));
+                           // node.warn(RED._("websocket.errors.send-error")+inspect(error));
                         }
                     });
                 }
