@@ -16,13 +16,6 @@
 <!-- WebSocket Input Node -->
 <script type="text/x-red" data-template-name="meazon in">
 	<input id="node-input-selectedIndex" style="display:none"/>
-	 <div class="form-row">
-		<label for="node-input-mode"><i class="fa fa-dot-circle-o"></i> <span>Type</span></label>
-			<select id="node-input-mode">
-				<option value="server">Listen On </option>
-				<option value="client">Connect To</option>
-			</select>
-		</div>
     <div class="form-row" id="websocket-server-row">
         <label for="node-input-server"><i class="fa fa-globe"></i> <span>Path</span></label>
         <input type="text" id="node-input-server">
@@ -84,17 +77,6 @@
         selectedIndex = $("#node-input-selectedIndex").val(); 		
 		
 		$("#websocket-client-row").hide();
-        $("#node-input-mode").change(function(){
-            if( $("#node-input-mode").val() === 'client') {
-                $("#websocket-server-row").hide();
-                $("#websocket-client-row").show();
-            }
-            else {
-                $("#websocket-server-row").show();
-                $("#websocket-client-row").hide();
-
-            }
-        });
 		
 		loadDevices(url);
         $("#node-input-client").change(function(){
@@ -146,12 +128,9 @@
 			$("#node-input-mac select").val($("#node-input-mac").find("option:selected").val());
 		})
 
-        if(this.client) {
-            $("#node-input-mode").val('client').change();
-        }
-        else {
-            $("#node-input-mode").val('server').change();
-        }
+		$("#node-input-mode").val('client').change();
+        $("#websocket-server-row").hide();
+        $("#websocket-client-row").show();
     }
 
     function ws_oneditsave() {
@@ -299,13 +278,6 @@
 <!-- WebSocket out Node -->
 <script type="text/x-red" data-template-name="meazon out">
 	<input id="node-input-selectedIndex" style="display:none"/>
-	<div class="form-row">
-        <label for="node-input-mode"><i class="fa fa-dot-circle-o"></i> <span>Type</span></label>
-        <select id="node-input-mode">
-            <option value="server"> Listen On</option>
-            <option value="client">Connect To</option>
-        </select>
-    </div>
     <div class="form-row" id="websocket-server-row">
         <label for="node-input-server"><i class="fa fa-globe"></i> <span>Path</span></label>
         <input type="text" id="node-input-server">

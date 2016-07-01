@@ -73,12 +73,12 @@ The output for a 3Phase Dinrail look like this:
 	rpwrB	:	Reactive Power B (Var)
 	rpwrC	:	Reactive Power C (Var)
 	
-	dxi	:	Digital External Input (High/Low)
+	dxi	    :	Digital External Input (High/Low)
 	relay	:	Relay Status (On/Off)
 	online	:	Device Status (Online/Offline)
 	
-    tmp  :  Temperature (C) 
-    hmd  :  Humidity (%) 
-    occ  :  Occupancy Alarm (0/1)
+    tmp     :  Temperature (C) 
+    hmd     :  Humidity (%) 
+    occ     :  Occupancy Alarm (0/1)
     batvlt  :  Battery Voltage (V) 
     batlrm  :  Battery Alarm (0/1) 

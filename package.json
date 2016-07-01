@@ -4,7 +4,12 @@
   "description": "A meazon node for node-red",
   "keywords": [
     "node-red",
-    "meazon"
+    "meazon",
+	"iot",
+	"energy",
+	"meter",
+	"control",	
+	"automation"
   ],
   "node-red": {
     "nodes": {
@@ -17,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gialouri/node-red-contrib-meazon.git"
+    "url": "git+https://github.com/meazonsa/node-red-contrib-meazon.git"
   },
   "author": "Meazon <e.gialouri@meazon.com> (http://meazon.com)",
   "license": "ISC",
