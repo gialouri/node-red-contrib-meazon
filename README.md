@@ -79,6 +79,6 @@ The output for a 3Phase Dinrail look like this:
 	
     tmp  :  Temperature (C) 
     hmd  :  Humidity (%) 
-    occ  :  Occupancy Alarm (0/1)) 
-    batvlt  :  Battery Voltage (10*V) 
+    occ  :  Occupancy Alarm (0/1)
+    batvlt  :  Battery Voltage (V) 
     batlrm  :  Battery Alarm (0/1) 

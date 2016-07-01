@@ -191,7 +191,7 @@ module.exports = function(RED) {
 		else if(commandPayload[0] == messageType[1]){
 			commandPayload.splice(0,1);
 			message = JSON.parse( commandPayload.join(''));
-			msg.DT = message.DT;
+		//	msg.DT = message.DT;
 			for (var i = 0; i < this._inputNodes.length; i++) {
 			 	if(((parseInt(message.xMAC,16) == this._inputNodes[i].mac) || (message.xMAC.toLowerCase() == this._inputNodes[i].mac.toLowerCase()) ) && (message.Number.toString() == this._inputNodes[i].number.toString())){
 					if(virtualDescs[this._inputNodes[i].descr]){
